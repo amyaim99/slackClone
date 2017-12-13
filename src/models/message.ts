@@ -3,7 +3,7 @@ export class Message {
 id: number;
 message = '';
 
-    constructor(values: Object = {}) {
+    constructor(values: any = {}) {
       Object.assign(this, values);
     }
 }

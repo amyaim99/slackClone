@@ -22,6 +22,13 @@ export class MessageDataService {
       .pop();
   }
 
+  getAllMessages(): Message[] {
+    return this.messages;
+  }
+  deleteMessageById(id: number): MessageDataService {
+    this.messages = this.messages.filter(todo => todo.id !== id);
+    return this;
+  }
 
 }
 
