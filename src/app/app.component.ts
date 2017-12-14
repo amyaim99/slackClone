@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  pageTitle = 'Slack clone';
+  pageTitle = 'Slack Clone';
   messages: string[] = ['How are you', 'I am tired', 'Alost there!'];
 }
