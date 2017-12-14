@@ -3,57 +3,27 @@
         <div class="col-2 col-md-auto" id="onlineUsers">
           <div class="card" style="width: 20rem;height:30rem;">
             <div class="alert alert-success" role="alert">
-              <h4 class="alert-heading">Online User</h4>
+              <h4 class="alert-heading">Online Users</h4>
               <ul></ul>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-sm-offset-4 frame card" id="chatboxHistory" style="height:30rem">
-          <ul> <li *ngFor= 'let message of messages' >{{message}} </li></ul>
+          <ul></ul>
           <div>
-              <div class="msj-rta macro" style="margin:auto">                        
+              <div class="msj-rta macro" style="margin:auto"> 
+                           
                  <div class="text text-r" style="background:whitesmoke !important">
-                      <app-message></app-message>
-                      
+                    <div id= "messageInput">
+                        <input class="mytext" placeholder="type your message here?" [(ngModel)]="newMessage.message"  (keyup.enter)='addMessage()'>
+                        
+                        <!-- <input class="mytext" placeholder="Type a message"/> 
+                        <button onclick="addMessage()" id="getMessage"> Send</button> 
+                      autofocus=""  [(ngModel)]="newMessage.message"   -->
+                </div>
                   </div>
               </div>
           </div>
       </div>  
       </div> 
       </div>
-
-
-
-
- <!-- <!DOCTYPE html>
- <html lang="en">
- <head>
-   <title>Bootstrap Example</title>
-   <meta charset="utf-8">
-  
- </head>
- <body>
- 
- <div class="jumbotron text-center">
-   <h1>My First Bootstrap Page</h1>
-   <p>Resize this responsive page to see the effect!</p> 
- </div>
-   
- <div class="container">
-   <div class="row">
-     <div class="col-sm-4">
-       <h3>Column 1</h3>
-      
-     </div>
-     <div class="col-sm-4">
-    
-      
-     <div class="col-sm-12">
-       <h3>Column 3</h3>        
-       
-     </div>
-   </div>
- </div>
- 
- </body>
- </html> -->

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MessageDataService } from '../services/message-data.service';
+import { Message } from '../models/message';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +8,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  pageTitle = 'Slack Clone';
-  messages: string[] = ['How are you', 'I am tired', 'Alost there!'];
+  newMessage: Message = new Message();
+  constructor(private messageDataService: MessageDataService) {
+  }
+addMessage() {
+this.messageDataService.addMessage(this.newMessage);
+this.newMessage = new Message();
+console.log(this.messageDataService.messages[2]);
+
+}
+
+
+
+
 }
