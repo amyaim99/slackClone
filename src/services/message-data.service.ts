@@ -27,6 +27,15 @@ export class MessageDataService {
   getAllMessages(): Message[] {
     return this.messages;
   }
+  // Put
+  updateMessageById(id: number, values: Object = {}): Message {
+    const message = this.getMessageById(id);
+    if (!message) {
+      return null;
+    }
+    Object.assign(message, values);
+    return message;
+  }
 
   // Delete
   deleteMessageById(id: number): MessageDataService {
