@@ -10,7 +10,8 @@ describe('DisplayComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DisplayComponent ]
+      declarations: [ DisplayComponent ],
+      providers: [MessageDataService],
     })
     .compileComponents();
   }));

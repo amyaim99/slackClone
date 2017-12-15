@@ -1,7 +1,7 @@
 
 .frame{
   background: #6b8fc5 ;
-  height:900px;
+  height:auto;
   overflow:hidden;
   width: 300px;
   border: 10px solid rgb(240, 4, 36);
