@@ -30,9 +30,4 @@ describe('MessageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  it('should add message to MessageDataSevice', () => {
-    const message1 = new Message({ message: 'How was your day' });
-    this.addMessage(message1);
-    expect(this.getMessageById(0)).toEqual(message1);
-  });
 });

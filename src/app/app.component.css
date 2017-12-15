@@ -1,45 +1,36 @@
-.mytext{
-    border:0;padding:10px;background:whitesmoke;
-}
-.text{
-    width:75%;display:flex;flex-direction:column;
-}
 
 .frame{
-  background: #668c9b ;
+  background: #6b8fc5 ;
   height:900px;
   overflow:hidden;
-  width: 900px;
-  border: 10px solid rgb(128, 0, 17);
+  width: 300px;
+  border: 10px solid rgb(240, 4, 36);
   padding: 10px;
   margin: 10px;
 }
 
-
-/*.frame > div:last-of-type{*/
-    /*position:absolute;bottom:5px;width:100%;display:flex;*/
-/*}*/
-
-
 ul {
     width:100%;
     list-style-type: none;
-    padding:18px;
+    padding:2px;
     position:absolute;
-    bottom:32px;
     display:flex;
     flex-direction: column;
 
 }
 
 #wrapper {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     width: 770px;
-    border: 1px solid rgb(250, 245, 245);
+    border: 1px solid rgb(5, 26, 9);
     background: rgba(248, 245, 245, 0.788);
-    overflow: hidden; /* will contain if #first is longer than #second */
+    overflow: hidden; 
 }
 #onlineUsers {
-    /* width: 300px; */
+    background: rgba(118, 129, 134, 0.788);
     float:left; /* add this */
     /* border: 1px solid red; */
 
