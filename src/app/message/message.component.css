@@ -1,6 +1,10 @@
 
 .mytext{
     border:0;padding:10px;background:whitesmoke;
-    width: 200%;
+    width: 143%;
     float: left;
+}
+.text{
+    display:flex;
+    flex-direction:column;
 }

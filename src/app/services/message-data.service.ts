@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 // import { Message } from '_debugger';
 import { Message } from '../models/message';
+import { Observable } from 'rxjs/Observable';
+import { of } from 'rxjs/observable/of';
 
 @Injectable()
 export class MessageDataService {
@@ -21,6 +23,10 @@ export class MessageDataService {
   getMessageById(id: number): Message {
     return this.messages.filter(message => message.id === id)
       .pop();
+  }
+
+  getMessage(): Observable<Message[]> {
+    return of(this.messages)
   }
 
   // Retrive

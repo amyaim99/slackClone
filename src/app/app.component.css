@@ -6,14 +6,21 @@
 }
 
 .frame{
-    background:#e0e0de ;
-    height:450px;
-    overflow:hidden;
-    padding:0;
+  background: #668c9b ;
+  height:900px;
+  overflow:hidden;
+  width: 900px;
+  border: 10px solid rgb(128, 0, 17);
+  padding: 10px;
+  margin: 10px;
 }
-.frame > div:last-of-type{
-    position:absolute;bottom:5px;width:100%;display:flex;
-}
+
+
+/*.frame > div:last-of-type{*/
+    /*position:absolute;bottom:5px;width:100%;display:flex;*/
+/*}*/
+
+
 ul {
     width:100%;
     list-style-type: none;
@@ -27,8 +34,8 @@ ul {
 
 #wrapper {
     width: 770px;
-    border: 1px solid gray;
-    background: rgba(114, 108, 108, 0.788);
+    border: 1px solid rgb(250, 245, 245);
+    background: rgba(248, 245, 245, 0.788);
     overflow: hidden; /* will contain if #first is longer than #second */
 }
 #onlineUsers {
@@ -40,5 +47,5 @@ ul {
 #chachatboxHistoryt2 {
     /* border: 1px solid green; */
     float: right;
-    overflow: hidden; /* if you don't want #second to wrap below #first */
+    overflow: hidden; /* if you don’t want #second to wrap below #first */
 }

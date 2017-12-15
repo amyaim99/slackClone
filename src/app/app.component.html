@@ -1,29 +1,25 @@
 <div class="container" >
-        <div id="wrapper">
-        <div class="col-2 col-md-auto" id="onlineUsers">
-          <div class="card" style="width: 20rem;height:30rem;">
-            <div class="alert alert-success" role="alert">
-              <h4 class="alert-heading">Online Users</h4>
-              <ul></ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-sm-offset-4 frame card" id="chatboxHistory" style="height:30rem">
+    <div id="wrapper">
+    <div class="col-2 col-md-auto" id="onlineUsers">
+      <div class="card" style="width: 20rem;height:40rem;">
+        <div class="alert alert-success" role="alert">
+          <h4 class="alert-heading">Online Users</h4>
           <ul></ul>
-          <div>
-              <div class="msj-rta macro" style="margin:auto"> 
-                           
-                 <div class="text text-r" style="background:whitesmoke !important">
-                    <div id= "messageInput">
-                        <input class="mytext" placeholder="type your message here?" [(ngModel)]="newMessage.message"  (keyup.enter)='addMessage()'>
-                        
-                        <!-- <input class="mytext" placeholder="Type a message"/> 
-                        <button onclick="addMessage()" id="getMessage"> Send</button> 
-                      autofocus=""  [(ngModel)]="newMessage.message"   -->
-                </div>
-                  </div>
-              </div>
-          </div>
-      </div>  
-      </div> 
+        </div>
       </div>
+    </div>
+    <div class="col-sm-6 col-sm-offset-4 frame card" id="chatboxHistory" style="width:100rem;height:35rem;">
+      <ul></ul>
+      <div>
+          <div class="msj-rta macro" style="margin:auto">                        
+             <div class="text text-r" style="background:whitesmoke !important">
+                <app-display></app-display>
+              </div>
+              
+          </div>
+      </div>
+  </div>  
+  </div> 
+  <app-message></app-message>
+  </div>
+

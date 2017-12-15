@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageDataService } from '../services/message-data.service';
+import { Message } from '../models/message';
 // import { Message } from '../models/message';
 // import { MessageDataService } from '/message-data.service';
 
@@ -9,7 +11,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessageComponent  {
 
-  pageTitle = 'Type your message';
+  newMessage: Message = new Message();
+  constructor(private messageDataService: MessageDataService) {
+  }
+addMessage() {
+this.messageDataService.addMessage(this.newMessage);
+this.newMessage = new Message();
+console.log(this.messageDataService.messages[0]);
+
+}
+getMessageById(id: number): Message {
+  return this.messageDataService.getMessageById(id);
+}
 
 }
 
