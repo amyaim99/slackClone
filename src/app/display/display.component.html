@@ -3,7 +3,7 @@
           <ul class="user__list" *ngIf="messageArray.length">
              
               <p class="user" *ngFor="let message of messageArray">
-                    {{ message.message }}  
+                    {{ message.message }}  {{ message.id }} 
               </p>
           </ul>
         </div>
